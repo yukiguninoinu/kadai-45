@@ -48,7 +48,7 @@ nav {
     display: flex;
     margin-right: 15px;
     font-size: 20px;
-    font-weight: bold;
+    padding: 10px;
 }
 h2 {
     font-size: 2rem;
@@ -69,7 +69,6 @@ h2 {
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
 }
 h3 {
     font-size: 18px;
@@ -79,9 +78,23 @@ h3 {
 .wrapper-item {
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 .bike {
     width: 90%;
 }
+.item {
+    text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+    .mainvisual img {
+        height: calc(100vh - 60px);
+    }
+    .profil {
+        flex-direction: column;
+    }
+    .wrapper-item {
+        flex-direction: column;
+    }
+    }
